@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Product page</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script src="./script.js"></script>
+</head>
+
+<div id="page-wrapper">
+  <header id="header">
+    <div class="logo">
+      <img
+        id="header-img" src="images/logo_depanero.png" alt="Depanero" />
+    </div>
+
+    <nav id="nav-bar">
+      <ul>
+        <li><a class="nav-link" href="#features">Features</a></li>
+        <li><a class="nav-link" href="#services">Services</a></li>
+        <li><a class="nav-link" href="#pricing">Pricing</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container"></div>
+
+  <section id="hero">
+    <h2>We can fix any electronics products</h2>
+    <form id="form" action="submit">
+      <input
+        name="email"
+        id="email"
+        type="email"
+        placeholder="Enter your email"
+        required
+      />
+      <input id="submit" type="submit" value="Get Started" class="btn" />
+    </form>
+  </section>
+
+  <div class="container">
+    <section id="features">
+      <div class="grid">
+        <div class="icon">
+           <img
+        id="premium-img" src="images/premium.png" width="100" height="100" alt="Premium image" />
+        </div>
+        <div class="desc">
+          <h2>Premium Services</h2>
+          <p>
+            We make sure your product will not suffer again under the guarantee order.
+          </p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="icon">
+          <img
+        id="fast-img" src="images/fast.png" width="100" height="100" alt="Fast image" />
+        </div>
+        <div class="desc">
+          <h2>Fast Shipping</h2>
+          <p>
+            We can fix anything and our workers will make sure you'll keep in touch wih us.
+          </p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="icon">
+       <img id="quality-img" src="images/quality.png" width="100" height="100" alt="Quality image" />
+        </div>
+        <div class="desc">
+          <h2>Quality Assurance</h2>
+          <p>
+            We deliver the best quality products.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="services">
+      <iframe
+        id="video"
+        height="315"
+        src="https://www.youtube-nocookie.com/embed/lNJ31gpptDY?rel=0&amp;controls=0&amp;showinfo=0"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </section>
+    <section id="pricing">
+      <div class="product" id="notebook">
+        <div class="level">NoteBook/PC</div>
+        <ol>
+          <li>Cleaning</li>
+          <li>Fixing problems</li>
+          <li>Repairing</li>
+          <li>Changing components</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+      <div class="product" id="fridges">
+        <div class="level">Fridges</div>
+        <ol>
+          <li>Cleaning</li>
+          <li>Fixing problems</li>
+          <li>Repairing</li>
+          <li>Changing components</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+      <div class="product" id="wash">
+        <div class="level">Washing machines</div>
+        <ol>
+          <li>Cleaning</li>
+          <li>Fixing problems</li>
+          <li>Repairing</li>
+          <li>Changing components</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+    </section>
+    <footer>
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <span>Copyright 2006, Depanero</span>
+    </footer>
+  </div>
+</div>
+</html>
