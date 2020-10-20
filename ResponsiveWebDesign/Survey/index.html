@@ -2,106 +2,100 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Gaming Survey</title>
+  <title>Gaming Survey</title>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   <link rel="stylesheet" href="./style.css">
-
 </head>
-<body>
-<!-- partial:index.partial.html -->
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 <div class="container">
-<header class="header">
-  <h1 id="title"> GAMING SURVEY <h1>
-    <p id="description"> This is a survey that will help us for marketing purpose </p>
-    <form id="survey-form">
-      <div class="form-group">
-        <label id="name-label" for="name">Name</label>
-        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required="">
-      </div>
+  <header class="header">
+    <h1 id="title"> GAMING SURVEY <h1>
+      <p id="description"> This is a survey that will help us for marketing purpose </p>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required="">
+        </div>
+
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required="">
+        </div>
+
+
+        <div class="form-group">
+          <label id="number-label" for="number">Age</label>
+          <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+        </div>
+
+        <div class="form-group">
+          <p>How much time do you spend on video games weekly?</p>
+          <select id="dropdown" name="role" class="form-control" required="">
+            <option disabled="" selected="" value="">Select a value:</option>
+            <option value="-10">Less than 10 hours</option>
+            <option value="10-20">10-20 hours</option>
+            <option value="20-30">20-30 hours</option>
+            <option value="30-40">30-40 hours</option>
+            <option value="40+">More than 40 hours</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>What type of games do you enjoy more?</p>
+          <label><input name="game-type" value="singleplayer" type="radio" class="input-radio" checked="">Singleplayer</label>
+          <label><input name="game-type" value="multiplayer" type="radio" class="input-radio">Multiplayer</label>
 
       <div class="form-group">
-        <label id="email-label" for="email">Email</label>
-        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required="">
-      </div>
-
-
-      <div class="form-group">
-        <label id="number-label" for="number">Age</label>
-        <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
-      </div>
+          <p>What device do you play on?</p>
+          <label><input name="device" value="pc" type="checkbox" class="input-checkbox">PC</label>
+          <label><input name="device" value="phone" type="checkbox" class="input-checkbox">Phone</label>
+          <label><input name="device" value="xbox" type="checkbox" class="input-checkbox">Xbox</label>
+          <label><input name="device" value="ps" type="checkbox" class="input-checkbox">PlayStation</label>
+          <label><input name="device" value="nintendo" type="checkbox" class="input-checkbox">Ninntendo</label>
 
       <div class="form-group">
-        <p>How much time do you spend on video games weekly?</p>
-        <select id="dropdown" name="role" class="form-control" required="">
-          <option disabled="" selected="" value="">Select a value:</option>
-          <option value="-10">Less than 10 hours</option>
-          <option value="10-20">10-20 hours</option>
-          <option value="20-30">20-30 hours</option>
-          <option value="30-40">30-40 hours</option>
-          <option value="40+">More than 40 hours</option>
-        </select>
-      </div>
+          <p>Have you ever played Early Access games?</p>
+          <label><input name="early-access" value="yes" type="radio" class="input-radio" checked="">Yes</label>
+          <label><input name="early-access" value="no" type="radio" class="input-radio">No</label>
 
-      <div class="form-group">
-        <p>What type of games do you enjoy more?</p>
-        <label><input name="game-type" value="singleplayer" type="radio" class="input-radio" checked="">Singleplayer</label>
-        <label><input name="game-type" value="multiplayer" type="radio" class="input-radio">Multiplayer</label>
-        
-    <div class="form-group">
-        <p>What device do you play on?</p>
-        <label><input name="device" value="pc" type="checkbox" class="input-checkbox">PC</label>
-        <label><input name="device" value="phone" type="checkbox" class="input-checkbox">Phone</label>
-        <label><input name="device" value="xbox" type="checkbox" class="input-checkbox">Xbox</label>
-        <label><input name="device" value="ps" type="checkbox" class="input-checkbox">PlayStation</label>
-        <label><input name="device" value="nintendo" type="checkbox" class="input-checkbox">Ninntendo</label>
-      
-    <div class="form-group">
-        <p>Have you ever played Early Access games?</p>
-        <label><input name="early-access" value="yes" type="radio" class="input-radio" checked="">Yes</label>
-        <label><input name="early-access" value="no" type="radio" class="input-radio">No</label>
+        <div class="form-group">
+          <p>What are your favourites genres?</p>
+          <label><input name="prefer" value="arcade" type="checkbox" class="input-checkbox">Arcade</label>
+          <label>
+            <input name="prefer" value="indie" type="checkbox" class="input-checkbox">Indie</label>
+          <label><input name="prefer" value="action" type="checkbox" class="input-checkbox">Action</label>
+          <label><input name="prefer" value="adventure" type="checkbox" class="input-checkbox">Adventure</label>
+          <label><input name="prefer" value="strategy" type="checkbox" class="input-checkbox">Strategy</label>
+          <label><input name="prefer" value="2d" type="checkbox" class="input-checkbox">2D</label>
+          <label><input name="prefer" value="rpg" type="checkbox" class="input-checkbox">RPG</label>
+          <label><input name="prefer" value="racing" type="checkbox" class="input-checkbox">Racing</label>
+          <label><input name="prefer" value="sports" type="checkbox" class="input-checkbox">Sports</label>
+          <label><input name="prefer" value="mmo" type="checkbox" class="input-checkbox">MMO</label>
+          <label><input name="prefer" value="fps" type="checkbox" class="input-checkbox">FPS</label>
+          <label><input name="prefer" value="moba" type="checkbox" class="input-checkbox">MOBA</label>
+        </div>
 
-      <div class="form-group">
-        <p>What are your favourites genres?</p>
-        <label><input name="prefer" value="arcade" type="checkbox" class="input-checkbox">Arcade</label>
-        <label>
-          <input name="prefer" value="indie" type="checkbox" class="input-checkbox">Indie</label>
-        <label><input name="prefer" value="action" type="checkbox" class="input-checkbox">Action</label>
-        <label><input name="prefer" value="adventure" type="checkbox" class="input-checkbox">Adventure</label>
-        <label><input name="prefer" value="strategy" type="checkbox" class="input-checkbox">Strategy</label>
-        <label><input name="prefer" value="2d" type="checkbox" class="input-checkbox">2D</label>
-        <label><input name="prefer" value="rpg" type="checkbox" class="input-checkbox">RPG</label>
-        <label><input name="prefer" value="racing" type="checkbox" class="input-checkbox">Racing</label>
-        <label><input name="prefer" value="sports" type="checkbox" class="input-checkbox">Sports</label>
-        <label><input name="prefer" value="mmo" type="checkbox" class="input-checkbox">MMO</label>
-        <label><input name="prefer" value="fps" type="checkbox" class="input-checkbox">FPS</label>
-        <label><input name="prefer" value="moba" type="checkbox" class="input-checkbox">MOBA</label>
-      </div>
-      
-      <div class="form-group">
-        <p>What is your favourite game?</p>
-        <textarea id="favourite-game" class="input" name="game" placeholder="Favourite Game"></textarea>
-      </div>
-      
-      <div class="form-group">
-        <p>What is your favourite character?</p>
-        <textarea id="favourite-character" class="input" name="character" placeholder="Favourite Character"></textarea>
-      </div>
-      
-      <div class="form-group">
-        <p>Describe your dream game</p>
-        <textarea id="comments" class="input-textarea" name="dream-game" placeholder="Dream game"></textarea>
-      </div>
+        <div class="form-group">
+          <p>What is your favourite game?</p>
+          <textarea id="favourite-game" class="input" name="game" placeholder="Favourite Game"></textarea>
+        </div>
 
-      <div class="form-group">
-        <button type="submit" id="submit" class="submit-button">
-          Submit
-        </button>
-      </div>
-    </form>
-</header>
+        <div class="form-group">
+          <p>What is your favourite character?</p>
+          <textarea id="favourite-character" class="input" name="character" placeholder="Favourite Character"></textarea>
+        </div>
+
+        <div class="form-group">
+          <p>Describe your dream game</p>
+          <textarea id="comments" class="input-textarea" name="dream-game" placeholder="Dream game"></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+  </header>
 </div>
-<!-- partial -->
-  
-</body>
 </html>
