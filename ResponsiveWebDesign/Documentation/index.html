@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - C++ Documentation</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="prism/prism.css" rel="stylesheet" />
+  <script src="prism/prism.js">></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</head>
+
+<nav id="navbar">
+  <header>C++ Documentation</header>
+  <ul>
+    <li><a class="nav-link" href="#What_is_C++?">What is C++?</a></li>
+    <li><a class="nav-link" href="#Why_Use_C++?">Why Use C++?</a></li>
+    <li><a class="nav-link" href="#C++_Get_Started">C++ Get Started</a></li>
+    <li><a class="nav-link" href="#C++_Install_IDE">C++ Install IDE</a></li>
+    <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+    <li><a class="nav-link" href="#Variables">Variables</a></li>
+    <li><a class="nav-link" href="#Display_variables">Display variables</a></li>
+    <li><a class="nav-link" href="#Declare_Multiple_Variables">Declare Multiple Variables</a></li>
+    <li><a class="nav-link" href="#Identifiers">Identifiers</a></li>
+    <li><a class="nav-link" href="#Constants">Constants</a></li>
+    <li><a class="nav-link" href="#Data_types">Data types</a></li>
+    <li><a class="nav-link" href="#if...else_statement">if...else statement</a></li>
+    <li><a class="nav-link" href="#while_statement">while statement</a></li>
+    <li><a class="nav-link" href="#Function_declarations">Function declarations</a></li>
+    <li><a class="nav-link" href="#Reference">Reference</a></li></ul>
+</nav>
+
+<main id="main-doc">
+  <section class="main-section" id="What_is_C++?">
+    <header>What is C++?</header>
+    <article>
+      <ul>
+        <li>C++ is a cross-platform language that can be used to create high-performance applications.</li>
+        <li>C++ was developed by Bjarne Stroustrup, as an extension to the C language.</li>
+        <li>C++ gives programmers a high level of control over system resources and memory.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="main-section" id="Why_Use_C++?">
+    <header>Why Use C++?</header>
+    <article>
+      <ul>
+        <li>C++ is one of the world's most popular programming languages.</li>
+        <li>C++ can be found in today's operating systems, Graphical User Interfaces, and embedded systems.</li>
+        <li>C++ is an object-oriented programming language which gives a clear structure to programs and allows code to be reused, lowering development costs.</li>
+        <li>C++ is portable and can be used to develop applications that can be adapted to multiple platforms.</li>
+        <li>C++ is fun and easy to learn!</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="main-section" id="C++_Get_Started">
+    <header>C++ Get Started</header>
+    <article>
+      <p>To start using C++, you need two things:</p>
+      <ul>
+        <li>A text editor, like Notepad, to write C++ code.</li>
+        <li>A compiler, like GCC, to translate the C++ code into a language that the computer will understand.</li>
+      </ul>
+      <p>There are many text editors and compilers to choose from. In this tutorial, we will use an IDE (see below).</p>
+    </article>
+  </section>
+
+  <section class="main-section" id="C++_Install_IDE">
+    <header>C++ Install IDE</header>
+    <article>
+      <p>An IDE (Integrated Development Environment) is used to edit AND compile the code.</p>
+      <p>Popular IDE's include Code::Blocks, Eclipse, and Visual Studio. These are all free, and they can be used to both edit and debug C++ code.</p>
+      <p><b>Note:</b> Web-based IDE's can work as well, but functionality is limited.</p>
+      <p>We will use <b>Code::Blocks</b> in our tutorial, which we believe is a good place to start.</p>
+      <p>You can find the latest version of Codeblocks <a href="http://www.codeblocks.org/downloads/26" target="_blank">here</a> .Download the <b><u>mingw-setup.exe</b></u> file, which will install the text editor with a compiler.</p>
+    </article>
+  </section>
+
+  <section class="main-section" id="Hello_world">
+    <header>Hello world</header>
+    <article>
+      <p>Let's create our first C++ file.</p>
+      <p>Open Codeblocks and go to <b>File > New > Empty File.</b></p>
+      <p>Write the following C++ code and save the file as myfirstprogram.cpp (<b>File > Save File as</b>):</p>
+      <pre><code class="language-cpp">
+        #include &lt;iostream&gt;
+        using namespace std;
+
+        int main()
+        {
+          cout << "Hello World!";
+          return 0;
+        }
+      </code></pre>
+      <p>Don't worry if you don't understand the code above - we will discuss it in detail in later chapters. For now, focus on how to run the code.</p>
+    </article>
+  </section>
+
+  <section class="main-section" id="Variables">
+    <header>Variables</header>
+    <article>
+      <p>Variables are containers for storing data values.</p>
+      <p>In C++, there are different types of variables (defined with different keywords), for example:</p>
+      <ul>
+        <li><b>int</b> - stores integers (whole numbers), without decimals, such as 123 or -123</li>
+        <li><b>double</b> - stores floating point numbers, with decimals, such as 19.99 or -19.99</li>
+        <li><b>char</b> - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes</li>
+        <li><b>string</b> - stores text, such as "Hello World". String values are surrounded by double quotes</li>
+        <li><b>bool</b> - stores values with two states: true or false</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="main-section" id="Display_variables">
+    <header>Display variables</header>
+    <article>
+      <p>The cout object is used together with the << operator to display variables.</p>
+      <p>To combine both text and a variable, separate them with the << operator:</p>
+      <pre><code class="language-cpp">
+        int myAge = 35;
+        cout << "I am " << myAge << " years old.";
+      </code></pre>
+    </article>
+  </section>
+
+  <section class="main-section" id="Declare_Multiple_Variables">
+    <header>Declare Multiple Variables</header>
+    <article>
+      <p>To declare more than one variable of the same type, use a comma-separated list:</p>
+      <pre><code class="language-cpp">
+        int x = 5, y = 6, z = 50;
+        cout << x + y + z;
+      </code></pre>
+    </article>
+  </section>
+
+  <section class="main-section" id="Identifiers">
+    <header>Identifiers</header>
+    <article>
+      <p>All C++ variables must be identified with unique names.</p>
+      <p>Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).</p>
+      <p><b>Note:</b> It is recommended to use descriptive names in order to create understandable and maintainable code:</p>
+      <pre><code class="language-cpp">
+        // Good
+        int minutesPerHour = 60;
+
+        // OK, but not so easy to understand what m actually is
+        int m = 60;
+      </code></pre>
+    </article>
+  </section>
+
+  <section class="main-section" id="Constants">
+    <header>Constants</header>
+    <article>
+      <p>When you do not want others (or yourself) to override existing variable values, use the const keyword (this will declare the variable as "constant", which means <b>unchangeable and read-only</b>):</p>
+      <pre><code class="language-cpp">
+        const int myNum = 15;  // myNum will always be 15
+        myNum = 10;  // error: assignment of read-only variable 'myNum'
+      </code></pre>
+      <p>You should always declare the variable as constant when you have values that are unlikely to change:</p>
+      <pre><code class="language-cpp">
+        const int minutesPerHour = 60;
+        const float PI = 3.14;
+      </code></pre>
+    </article>
+  </section>
+
+  <section class="main-section" id="Data_types">
+    <header>Data types</header>
+    <article>
+      <p>As explained in the Variables chapter, a variable in C++ must be a specified data type:<p>
+      <pre><code class="language-cpp">
+        int myNum = 5;               // Integer (whole number)
+        float myFloatNum = 5.99;     // Floating point number
+        double myDoubleNum = 9.98;   // Floating point number
+        char myLetter = 'D';         // Character
+        bool myBoolean = true;       // Boolean
+        string myText = "Hello";     // String
+      </code></pre>
+    </article>
+  </section>
+
+  <section class="main-section" id="if...else_statement">
+    <header>if...else statement</header>
+    <article>
+      <p>Use the if statement to specify a block of C++ code to be executed if a condition is true.</p>
+      <pre><code class="language-cpp">
+        if (condition) {
+          // block of code to be executed if the condition is true
+        }
+      </code></pre>
+      <p>In the example below, we test two values to find out if 20 is greater than 18. If the condition is true, print some text:</p>
+      <pre><code class="language-cpp">
+        if (20 > 18) {
+          cout << "20 is greater than 18";
+        }
+      </code></pre>
+      <p>We can also test variables:</p>
+      <pre><code class="language-cpp">
+        int x = 20;
+        int y = 18;
+        if (x > y) {
+          cout << "x is greater than y";
+        }
+      </code></pre>
+
+      <p>Use the else statement to specify a block of code to be executed if the condition is false.</p>
+      <pre><code class="language-cpp">
+        if (condition) {
+          // block of code to be executed if the condition is true
+        } else {
+          // block of code to be executed if the condition is false
+        }
+      </code></pre>
+      <p>Example:</p>
+      <pre><code class="language-cpp">
+        int time = 20;
+        if (time < 18) {
+          cout << "Good day.";
+        } else {
+          cout << "Good evening.";
+        }
+        // Outputs "Good evening."
+      </code></pre>
+      <p>Use the else if statement to specify a new condition if the first condition is false.</p>
+      <pre><code class="language-cpp">
+        if (condition1) {
+          // block of code to be executed if condition1 is true
+        } else if (condition2) {
+          // block of code to be executed if the condition1 is false and condition2 is true
+        } else {
+          // block of code to be executed if the condition1 is false and condition2 is false
+        }
+      </code></pre>
+      <p>Example:</p>
+      <pre><code class="language-cpp">
+        int time = 22;
+        if (time < 10) {
+          cout << "Good morning.";
+        } else if (time < 20) {
+          cout << "Good day.";
+        } else {
+          cout << "Good evening.";
+        }
+        // Outputs "Good evening."
+      </code></pre>
+    </article>
+  </section>
+
+  <section class="main-section" id="while_statement">
+    <header>while statement</header>
+    <article>
+      <p>The while loop loops through a block of code as long as a specified condition is true:</p>
+      <pre><code class="language-cpp">
+        while (condition) {
+          // code block to be executed
+        }
+      </code></pre>
+      <p>In the example below, the code in the loop will run, over and over again, as long as a variable (i) is less than 5:</p>
+      <pre><code class="language-cpp">
+        int i = 0;
+        while (i < 5) {
+          cout << i << "\n";
+          i++;
+        }
+      </code></pre>
+    </article>
+  </section>
+
+  <section class="main-section" id="Function_declarations">
+    <header>Function declarations</header>
+    <article>
+      <p>C++ provides some pre-defined functions, such as main(), which is used to execute code. But you can also create your own functions to perform certain actions.</p>
+      <p>To create (often referred to as declare) a function, specify the name of the function, followed by parentheses ():</p>
+      <pre><code class="language-cpp">
+        void myFunction() {
+          // code to be executed
+        }
+      </code></pre>
+      <p>Example Explained:</p>
+      <ul>
+        <li>myFunction() is the name of the function</li>
+        <li>void means that the function does not have a return value. You will learn more about return values later in the next chapter</li>
+        <li>inside the function (the body), add code that defines what the function should do</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="main-section" id="Reference">
+    <header>Reference</header>
+    <article>
+      <ul>
+        <li>All the documentation in this page is taken from <a href="https://www.w3schools.com/cpp/" target="_blank">w3schools</a></li>
+      </ul>
+    </article>
+  </section>
+</main>
+</html>
