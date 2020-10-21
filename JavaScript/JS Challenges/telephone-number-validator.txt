@@ -1,0 +1,12 @@
+function telephoneCheck(str) {
+  if(str.substring(0, 2) === "1 ") {
+      str = str.substring(2);
+  }
+  
+  var format1 = /^\d{3}(\-|\s)?\d{3}(\-|\s)?\d{4}$/;
+  var format2 = /^1?\(\d{3}\)?\s?\d{3}\-\d{4}$/;
+
+  return format1.test(str) || format2.test(str);
+}
+
+telephoneCheck("555-555-5555");
