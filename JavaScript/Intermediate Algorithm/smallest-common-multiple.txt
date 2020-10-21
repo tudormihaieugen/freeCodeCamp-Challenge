@@ -1,0 +1,24 @@
+function smallestCommons(arr) {
+  arr.sort(function(a, b){return a - b});
+
+  var scm = arr[0];
+  for (let i = arr[0]; i <= arr[1]; i++) {
+    var scmCopy = scm;
+    var iCopy = i;
+
+    while (scmCopy != iCopy) {
+      if (scmCopy > iCopy) {
+        scmCopy -= iCopy;
+      }
+      else {
+        iCopy -= scmCopy;
+      }
+    }
+    scm = scm * (i / iCopy);
+  }
+
+  return scm;
+}
+
+
+smallestCommons([1,5]);

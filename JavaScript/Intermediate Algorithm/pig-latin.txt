@@ -1,0 +1,32 @@
+function translatePigLatin(str) {
+
+  function isVowel(char) {
+    var vowel = "aeiou";
+    if (vowel.indexOf(char) != -1) {
+        return true;
+    }
+    return false
+  }
+
+  var arr = str.split("");
+  var i = 0;
+  while (true) {
+    if (isVowel(arr[i])) {
+      break;
+    }
+    i++;
+  }
+
+  var newArr = [];
+  newArr = arr.slice(i);
+  newArr = newArr.concat(arr.slice(0, i));
+  if (i == 0) {
+    newArr.push('w');
+  }
+  newArr.push('a', 'y');
+  str = newArr.join("");
+
+  return str;
+}
+
+translatePigLatin("consonant");
