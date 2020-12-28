@@ -56,7 +56,5 @@ def arithmetic_arranger(problems, ok=False):
         arranged_problems = first + '\n' + second + '\n' + lines + '\n' + sum_x
     else:
         arranged_problems = first + '\n' + second + '\n' + lines
+
     return arranged_problems
-
-
-print(arithmetic_arranger(["3 + 855", "3801 - 2", "45 + 43", "123 + 49"]))
